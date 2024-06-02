@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 
 const Todo = () => {
     const[newTask,setNewTask]=useState(" ");
@@ -22,19 +22,23 @@ const toggleTodoComplete=(id)=>{
         )
       );
 };
+
  
   return (
     <div>
       <h1>ToDo App</h1>
       <hr></hr>
       <div className='list'>
-        <ol>
+      {task.length === 0 ? (
+        <h3>No todos in list</h3>
+      ) : (<ol>
             {task.map((todo)=>(<li key={todo.id}><input type="checkbox"checked={todo.completed}
               onChange={() => toggleTodoComplete(todo.id)} ></input><span style={{ textDecoration:todo.completed? 'line-through' : 'none' }}>
               {todo.text}
             </span>        
              <button onClick={()=>handletaskdelete(todo.id)}>Delete</button><hr></hr></li>))}
-        </ol>    
+        </ol>  )
+}  
             
       </div>
       <div className='head'>
