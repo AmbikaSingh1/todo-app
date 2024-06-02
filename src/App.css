@@ -1,10 +1,73 @@
-.App {
-  text-align: center;
+h1{
+  display: flex;
+  justify-content: center;
+
+}
+.head button{
+  background-color: green;
+  color:white;
+  width:7em;
+  height:4em;
+  font-size: larger;
+  font-weight: bolder;
+}
+.head input{
+  width:25em;
+  height:4em;
+  font-size: larger;
+  font-weight: bolder;
+}
+.head button:hover{
+  background-color: darkgreen;
+}
+.head{
+  display: flex;
+  justify-content: center;
+}
+.list button{
+  background-color: red;
+  color:white;
+  width:7em;
+  height:4em;
+  font-weight: bolder;
+  margin-left:6em;
+
+}
+.list input[type="checkbox"]{
+  width:4em;
+  height:2em;
+}
+.list li{
+  width:15em;
+  padding: 14px;;
+}
+.list ol{
+  font-size: 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width:700px){
+  .list,.head{
+    max-width:700px;
+  }
+  .h1{
+    font-size: 8em;
+  }
+  .head{
+    margin: 2em;
+  }
+  .head input{
+    width:auto;
+    font-size: 2em;
+  }
+  .head button{
+    width:auto;
+    height:auto;
+    font-size:2em;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
