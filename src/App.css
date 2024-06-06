@@ -56,17 +56,19 @@ h1{
   .h1{
     font-size: 8em;
   }
-  .head{
-    margin: 2em;
+  .list input{
+    width:auto;
   }
   .head input{
     width:auto;
-    font-size: 2em;
+    
   }
   .head button{
     width:auto;
     height:auto;
-    font-size:2em;
+  }
+  .list button{
+    font-size: 14px;
   }
 }
 
